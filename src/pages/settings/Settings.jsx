@@ -5,6 +5,7 @@ import { useContext } from 'react';
 import { Context } from '../../context/Context';
 import { useState } from 'react';
 import axios from 'axios';
+import { api } from "../../utils/utils.js"
 
 export default function Settings() {
   const PF = "http://localhost:3000/images/";

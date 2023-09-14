@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useContext } from 'react';
 import { Context } from '../../context/Context';
 import axios from "axios";
+import { api } from "../../utils/utils.js"
 
 export default function Write() {
   const [title, setTitle] = useState("");

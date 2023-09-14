@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios';
 import {api} from "../../utils/utils.js"
+
 export default function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
