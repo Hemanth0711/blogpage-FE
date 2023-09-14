@@ -10,7 +10,7 @@ import { api } from "../../utils/utils.js";
 
 export default function SinglePost() {
   const location = useLocation();
-  const PF = "http://localhost:3000/images/";
+  const PF = "https://react-blog-api-7l23.onrender.com/images/";
   const split_arr = location.pathname.split("/");
   const path = split_arr[split_arr.length-1];
   const [post, setPost] = useState({});
