@@ -35,7 +35,7 @@ export default function Write() {
 
     try {
       const res = await axios.post(api+"/posts", newPost);
-      window.location.replace(api+'/post/' + res.data._id);
+      window.location.replace(api+`/post/${res.data._id}` );
     } catch (err) {
       console.error("Error creating post:", err);
     }
