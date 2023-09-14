@@ -35,14 +35,14 @@ export default function Settings() {
       data.append("file", file);
       updatedUser.profilePic = filename;
       try {
-        await axios.post("/upload", data);
+        await axios.post(api+"/upload", data);
       } catch (err) {
         console.error("Error uploading file:", err);
       }
     }
     try {
       console.log(updatedUser);
-      const res = await axios.put(`/users/${user._id}`, updatedUser);
+      const res = await axios.put(api+`/users/${user._id}`, updatedUser);
       if( res.status === 200){
         console.log(res.data);
         localStorage.setItem("user", JSON.stringify(res.data));
